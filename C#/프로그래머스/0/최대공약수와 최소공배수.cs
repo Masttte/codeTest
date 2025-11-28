@@ -16,7 +16,7 @@ public class Solution {
     // 2. 최소공배수(LCM) 함수
     // LCM(a, b) = (a * b) / GCD(a, b) 공식을 사용합니다.
     private int LCM(int a, int b) {
-        return ((int)a * b) / GCD(a, b);
+        return (a * b) / GCD(a, b);
     }
 
     // 3. 문제 해결 함수
