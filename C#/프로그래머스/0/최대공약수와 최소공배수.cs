@@ -1,10 +1,10 @@
 using System;
 
-// 최소공약수와 최대공배수를 구하는 코드 연습
+// 최대공약수와 최소공배수를 구하는 코드 연습
 public class Solution {
     // 1. 유클리드 호제법을 이용한 최대공약수(GCD) 함수
     private int GCD(int a, int b) {
-        // a와 b 중 작은 수가 b가 되도록 정렬하지 않아도, 첫 번째 루프에서 자동으로 처리
+        // 참고: a와 b 중 작은 수가 b가 되도록 정렬하지 않아도, 첫 번째 루프에서 자동으로 처리
         while (b != 0) {
             int remain = a % b;
             a = b;
