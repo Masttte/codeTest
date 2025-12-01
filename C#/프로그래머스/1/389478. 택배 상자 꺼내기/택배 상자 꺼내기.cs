@@ -15,7 +15,6 @@ public class Solution {
         }
         
         // 2. 현재 층부터 위로 올라가면서 상자가 있는지 확인
-        // 최대 층수는 n/w 정도이므로 넉넉하게 반복하거나 while로 처리
         for (int row = targetRow; row <= (n - 1) / w; row++) {
             int boxNum;
             
