@@ -13,7 +13,7 @@ public static int solution(int n, int w, int num)
         }
         else
         {
-            num += (((((num / w) + 1) * w) - num) * 2) + 1; // 이 식으로 넘버에 값을 더하는데 연구필요
+            num += (((((num / w) + 1) * w) - num) * 2) + 1; // 이 식은 연구필요
         }
     }
     return count;
