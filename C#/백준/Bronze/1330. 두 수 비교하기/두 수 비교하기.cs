@@ -1,5 +1,4 @@
 using System;
-using System.Globalization;
 
 public class twonumbercompare
 {
@@ -20,3 +19,4 @@ public class twonumbercompare
         }
     }
 }
+
