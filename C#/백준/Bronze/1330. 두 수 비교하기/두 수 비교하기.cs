@@ -1,19 +1,16 @@
 using System;
+using System.Globalization;
 
-internal class Program
+public class twonumbercompare
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        string[] n = Console.ReadLine().Split();
-
-        int a = int.Parse(n[0]);
-        int b = int.Parse(n[1]);
-
-        if (a > b)
+        int[] numlist = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+        if (numlist[0] > numlist[1])
         {
             Console.WriteLine(">");
         }
-        else if (a < b)
+        else if (numlist[0] < numlist[1])
         {
             Console.WriteLine("<");
         }
