@@ -4,7 +4,7 @@ using System.Text;
 public class Solution
 {
     public string solution(int[] food)
-    {
+    {//string 은 불가변성 이라 계속 더하면 최적화가 나뻐짐
         // 최적화를 위해 스트링 빌더로 작성
         StringBuilder sb = new StringBuilder();
         int LogicNum;
