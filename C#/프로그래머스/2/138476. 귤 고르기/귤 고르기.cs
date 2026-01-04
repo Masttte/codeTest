@@ -22,7 +22,6 @@ public class Solution
 
         // List로 했다가 시간초과남
         // Dictionary로 리펙토링
-        // - 중복 체크를 한번만 하기
 
         // Dictionary Key(귤 숫자)와 Value(개수)
         Dictionary<int, int> tangerine_D = new Dictionary<int, int>();
@@ -41,7 +40,7 @@ public class Solution
             }
         }
         // 예시: tangerine = [1, 3, 2, 5, 4, 5, 2, 3]
-        // 결과: dict = { 1:1, 3:2, 2:2, 5:2, 4:1 }
+        // 결과: tangerine_D = { 1:1, 3:2, 2:2, 5:2, 4:1 }
 
         // Value 기준으로 내림차순 리스트 생성
         List<int> desendingList = tangerine_D.Values.OrderByDescending(x => x).ToList();
