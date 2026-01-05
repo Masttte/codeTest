@@ -45,7 +45,7 @@ public class Solution {
             }
         }
         
-        // 목적지까지의 거리 반환
+        // 목적지의 거리 반환
         int answer = distance[y - 1, x - 1];
         
         // 전부 막혀있어서 값을 받지 못하면 -1
