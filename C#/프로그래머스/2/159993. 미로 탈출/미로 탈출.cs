@@ -9,7 +9,6 @@ public class Solution
         (int y, int x) startPos = (0, 0);      // S
         (int y, int x) endPos = (0, 0);        // E
         (int y, int x) leverPos = (0, 0);      // L
-        (int y, int x) wallPos = (0, 0);       // X
         (int y, int x) currentPos = (0, 0);    // 현재 위치
 
         // 방향 벡터 상, 하, 좌, 우
