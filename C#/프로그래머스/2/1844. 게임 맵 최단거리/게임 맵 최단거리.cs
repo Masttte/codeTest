@@ -6,7 +6,7 @@ public class Solution {
         int y = maps.GetLength(0);  // m
         int x = maps.GetLength(1);  // n
         
-        // 방향 벡터: 상, 하, 좌, 우 (y, x 순서)
+        // 방향 벡터: 상, 하, 좌, 우
         int[] dx = { 0, 0, -1, 1 };
         int[] dy = { -1, 1, 0, 0 };
         
