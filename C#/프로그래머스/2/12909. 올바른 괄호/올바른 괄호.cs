@@ -28,7 +28,8 @@ public class Solution
             if (symbol == ')')
                 close++;
 
-            if (close > open) return false;
+            if (close > open)
+                return false;
         }
 
         return true;
