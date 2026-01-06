@@ -58,11 +58,11 @@ public class Solution
             }
             else if (dir == 1) // D
             {
-                y_visited[x, ny] = true;
+                y_visited[x, ny] = true; //아래가 기준점
             }
             else if (dir == 2) // L
             {
-                x_visited[nx, y] = true;
+                x_visited[nx, y] = true; //왼쪽이 기준점
             }
             else if (dir == 3) // R
             {
@@ -88,6 +88,6 @@ public class Solution
                 answer++;
         }
 
-        return answer; // 생각할게 의외로 많은 문제였다
+        return answer; // 완료...
     }
 }
