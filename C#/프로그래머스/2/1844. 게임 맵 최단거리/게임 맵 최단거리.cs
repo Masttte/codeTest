@@ -8,7 +8,7 @@ public class Solution
         int y = maps.GetLength(0);  // m
         int x = maps.GetLength(1);  // n
 
-        //방향벡터 - 상, 하, 좌, 우
+        //방향백터 - 상, 하, 좌, 우
         int[] dx = { 0, 0, -1, 1 };
         int[] dy = { -1, 1, 0, 0 };
 
@@ -25,13 +25,14 @@ public class Solution
         // 탐색
         while (queue.Count > 0)
         {
-            (int y, int x) current = queue.Dequeue();
+            // 현재 위치 저장
+            (int y, int x) currentPos = queue.Dequeue();
 
             // 상하좌우의 다음 위치 체크
             for (int i = 0; i < 4; i++)
             {
-                int nx = current.x + dx[i];
-                int ny = current.y + dy[i];
+                int nx = currentPos.x + dx[i];
+                int ny = currentPos.y + dy[i];
 
                 // 맵 범위 체크
                 if (ny < 0 || ny >= y || nx < 0 || nx >= x)
@@ -39,14 +40,14 @@ public class Solution
                     continue;
                 }
 
-                // 거리 정보가 존재하거나, 벽인 곳
+                // 거리 정보가 존재하거나, 벽인 곳 체크
                 if (distance[ny, nx] != 0 || maps[ny, nx] == 0)
                 {
                     continue;
                 }
 
                 // 이동 가능하면 카운트하고 큐에 넣기 (여러 경로를 저장하는 BFS)
-                distance[ny, nx] = distance[current.y, current.x] + 1;
+                distance[ny, nx] = distance[currentPos.y, currentPos.x] + 1;
                 queue.Enqueue((ny, nx));
             }
         }
