@@ -21,7 +21,7 @@ public class Solution
         char[,] map = new char[park.Length, park[0].Length];
         for (int y_ = 0; y_ < park.Length; y_++)
         {
-            for (int x_ = 0; x_ < park[y_].Length; x_++)
+            for (int x_ = 0; x_ < park[0].Length; x_++)
             {
                 map[y_, x_] = park[y_][x_];
 
